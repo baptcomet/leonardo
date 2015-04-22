@@ -1,3 +1,3 @@
-# leonardo
+# Leonardo
 
-Ecole de danse Reynaud Leonardo
+Ecole de danse Reynaud/Leonardo
