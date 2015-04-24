@@ -1,3 +1,5 @@
+<?php include('words.php') ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,7 +29,7 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
@@ -46,7 +48,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">JacaDanse</a>
+                <a class="navbar-brand page-scroll" href="#page-top"><?php say('NOM_SITE') ?></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -81,9 +83,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Bienvenue à l'école JacaDanse</div>
-                <div class="intro-lead-in">Nous sommes ravis de vous voir</div>
-                <a href="#services" class="page-scroll btn btn-xl">Je fais un tour</a>
+                <div class="intro-heading"><?php say('GROS_TITRE') ?></div>
+                <div class="intro-lead-in"><?php say('PETIT_TITRE') ?></div>
+                <a href="#services" class="page-scroll btn btn-xl"><?php say('BOUTON_TITRE') ?></a>
             </div>
         </div>
     </header>
