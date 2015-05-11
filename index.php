@@ -1,4 +1,17 @@
-<?php include('words.php') ?>
+<?php
+/*
+ * TODO
+ * - Un carroussel
+ * - Un backoffice
+ * - Des données en base
+ *      actualités
+ *      photos
+ *      cours et horaires
+ *      articles de presse
+ *      professeurs
+ *  - Un planning des cours interactif
+ */
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><?php say('NOM_SITE') ?></a>
+                <a class="navbar-brand page-scroll" href="#page-top">JacaDanse</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -58,10 +71,22 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Cours</a>
+                        <a class="page-scroll" href="#accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#cours">Cours</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#planning">Planning</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#evenements">Évènements</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#portfolio">Photos</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#presse">Presse</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">A propos</a>
@@ -83,15 +108,62 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading"><?php say('GROS_TITRE') ?></div>
-                <div class="intro-lead-in"><?php say('PETIT_TITRE') ?></div>
-                <a href="#services" class="page-scroll btn btn-xl"><?php say('BOUTON_TITRE') ?></a>
+                <div class="intro-heading">Bienvenue à l'école JacaDanse</div>
+                <div class="intro-lead-in">Nous sommes ravis de vous voir</div>
+                <a href="#accueil" class="page-scroll btn btn-xl">Visiter</a>
             </div>
         </div>
     </header>
 
+    <!-- ACCUEIL -->
+    <section id="accueil">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Accueil</h2>
+                    <h3 class="section-subheading text-muted">Nos cours de danses latines</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3 class="service-heading">Salsa, bachata</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Draguignan</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Samba, Tango</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Flayosc</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Danses latines</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Ste Anastasie</h4>
+                    <p class="text-muted">Gard (30)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- COURS -->
-    <section id="services">
+    <section id="cours" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -137,8 +209,102 @@
         </div>
     </section>
 
+    <!-- PLANNING -->
+    <section id="planning">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Planning</h2>
+                    <h3 class="section-subheading text-muted">Nos cours de danses latines</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3 class="service-heading">Salsa, bachata</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Draguignan</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Samba, Tango</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Flayosc</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Danses latines</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Ste Anastasie</h4>
+                    <p class="text-muted">Gard (30)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENEMENTS -->
+    <section id="evenements" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Évènements</h2>
+                    <h3 class="section-subheading text-muted">Nos cours de danses latines</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3 class="service-heading">Salsa, bachata</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Draguignan</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Samba, Tango</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Flayosc</h4>
+                    <p class="text-muted">Var (83)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="service-heading">Danses latines</h3>
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                        <i class="fa fa-map-marker fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <h4 class="service-heading">Ste Anastasie</h4>
+                    <p class="text-muted">Gard (30)</p>
+                    <h5 class="service-heading"><i class="fa fa-clock-o"></i> Horaires</h5>
+                    <p class="text-muted">Lundi au Vendredi : 9h - 18h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PHOTOS -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="portfolio">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -235,8 +401,89 @@
         </div>
     </section>
 
+    <!-- PRESSE -->
+    <section id="presse" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Presse</h2>
+                    <h3 class="section-subheading text-muted">L'histoire de l'école</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>2012-2013</h4>
+                                    <h4 class="subheading">Nos débuts</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Ca c'est quand on s'est dit "Et pourquoi pas nous!"</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mars 2014</h4>
+                                    <h4 class="subheading">L'école est crée</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">On donne nos premiers cours à nos amis etc.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Janvier 2015</h4>
+                                    <h4 class="subheading">Achat du local à St Maximin</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">L'école déménage et on a une grande salle!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Mai 2015</h4>
+                                    <h4 class="subheading">L'explosion</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">On a un site internet tellement cool que ça marche trop bien</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <h4>Aujourd'hui,
+                                    <br>c'est à vous
+                                    <br>de danser!</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- A PROPOS -->
-    <section id="about">
+    <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -317,7 +564,7 @@
     </section>
 
     <!-- L'EQUIPE -->
-    <section id="team" class="bg-light-gray">
+    <section id="team">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
